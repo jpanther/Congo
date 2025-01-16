@@ -70,7 +70,7 @@ The list below is just a handful of the websites that are built using the Congo 
 | [kylecapehart.com](https://kylecapehart.com/)                          | Personal Site and Blog            |
 | [hosni.info](https://hosni.info/)                                      | Personal site and Tech Blog       |
 | [mattstrayer.com](https://www.mattstrayer.com/)                        | Personal Site and Blog            |
-| [noamlerner.com](https://www.noamlerner.com/)                          | Personal blog (English/Hebrew)    |
+| [noamlerner.com](https://noamlerner.com/)                              | Personal blog (English/Hebrew)    |
 | [jneidel.com](https://jneidel.com)                                     | Personal site and blog            |
 | [clementfouque.com](https://clementfouque.com)                         | Personal Site and Tech Blog       |
 | [victoryuan.com](https://victoryuan.com)                               | Personal Site and blog            |
