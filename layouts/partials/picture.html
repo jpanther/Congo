@@ -24,14 +24,14 @@
       {{ end }}
     {{ end }}
     {{ if (eq "" $width $height) }}
-      {{ warnf "[CONGO] Can't detect width and height for SVG %s" .RelPermalink }}
+      {{ warnf "[CONGO] Can't detect width and height for SVG %s" .Permalink }}
       {{/* do not use lazy without dimensions */}}
       {{ $lazy = false }}
     {{ end }}
     <!-- prettier-ignore -->
     <picture {{ with $class }} class="{{ . }}" {{ end }}>
       <img
-        src="{{ .RelPermalink }}"
+        src="{{ .Permalink }}"
         {{ with $width }}width="{{ . }}"{{ end }}
         {{ with $height }}height="{{ . }}"{{ end }}
         {{ with $class }}class="{{ . }}"{{ end }}
@@ -57,23 +57,23 @@
         <source
           {{ if lt .Width 660 }}
             {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
-              srcset="{{ .RelPermalink }}"
+              srcset="{{ .Permalink }}"
             {{ end }}
           {{ else }}
-            srcset=" {{- (.Resize "330x webp").RelPermalink }} 330w,
-            {{- (.Resize "660x webp").RelPermalink }} 660w
+            srcset=" {{- (.Resize "330x webp").Permalink }} 330w,
+            {{- (.Resize "660x webp").Permalink }} 660w
             {{ if gt .Width 1024 }}
-              ,{{ (.Resize "1024x webp").RelPermalink }} 1024w
+              ,{{ (.Resize "1024x webp").Permalink }} 1024w
             {{ else }}
               {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
-                ,{{ .RelPermalink }} {{ .Width }}w
+                ,{{ .Permalink }} {{ .Width }}w
               {{ end }}
             {{ end }}
             {{ if gt .Width 1320 }}
-              ,{{ (.Resize "1320x webp").RelPermalink }} 1320w
+              ,{{ (.Resize "1320x webp").Permalink }} 1320w
             {{ else }}
               {{ with .Resize (printf "%dx%d webp" .Width .Height) }}
-                ,{{ .RelPermalink }} {{ .Width }}w
+                ,{{ .Permalink }} {{ .Width }}w
               {{ end }}
             {{ end }}"
           {{ end }}
@@ -88,20 +88,20 @@
         {{ with $alt }}alt="{{ . }}"{{ end }}
         {{ with $lazy }}loading="lazy" decoding="async"{{ end }}
         {{ if lt .Width 660 }}
-          src="{{ .RelPermalink }}"
+          src="{{ .Permalink }}"
         {{ else }}
-          src="{{ (.Resize "660x").RelPermalink }}"
-          srcset=" {{- (.Resize "330x").RelPermalink }} 330w,
-          {{- (.Resize "660x").RelPermalink }} 660w
+          src="{{ (.Resize "660x").Permalink }}"
+          srcset=" {{- (.Resize "330x").Permalink }} 330w,
+          {{- (.Resize "660x").Permalink }} 660w
           {{ if gt .Width 1024 }}
-            ,{{ (.Resize "1024x").RelPermalink }} 1024w
+            ,{{ (.Resize "1024x").Permalink }} 1024w
           {{ else }}
-            ,{{ .RelPermalink }} {{ .Width }}w
+            ,{{ .Permalink }} {{ .Width }}w
           {{ end }}
           {{ if gt .Width 1320 }}
-            ,{{ (.Resize "1320x").RelPermalink }} 1320w
+            ,{{ (.Resize "1320x").Permalink }} 1320w
           {{ else }}
-            ,{{ .RelPermalink }} {{ .Width }}w
+            ,{{ .Permalink }} {{ .Width }}w
           {{ end }}"
           sizes="100vw"
         {{ end }}
