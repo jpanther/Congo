@@ -51,9 +51,12 @@ sharing:
   pinterest: "Auf Pinterest pinnen"
   reddit: "An Reddit senden"
   twitter: "Auf Twitter teilen"
+  # threads: "Post on Threads"
   telegram: "Auf Telegram teilen"
   line: "Auf LINE teilen"
   weibo: "Auf Weibo teilen"
+  # x-twitter: "Post on X"
+  xing: "Auf XING teilen"
 
 shortcode:
   recent_articles: "Neue Beiträge"

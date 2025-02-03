@@ -1,4 +1,4 @@
-<header class="py-6 font-semibold text-neutral-900 print:hidden sm:py-10 dark:text-neutral">
+<header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
   <nav class="flex items-start justify-between sm:items-center">
     {{/* Site logo/title */}}
     <div class="flex flex-row items-center">
@@ -9,7 +9,7 @@
       <ul class="flex list-none flex-col text-end sm:flex-row">
         {{ if .Site.Menus.main }}
           {{ range .Site.Menus.main }}
-            {{ if and (eq .Params.action "locale") (or (not page.IsTranslated) (not site.IsMultiLingual)) }}
+            {{ if and (eq .Params.action "locale") (or (not page.IsTranslated) (not hugo.IsMultilingual)) }}
               {{ continue }}
             {{ end }}
             <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">

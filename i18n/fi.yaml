@@ -51,9 +51,12 @@ sharing:
   pinterest: "Kiinnitä Pinterestiin"
   reddit: "Lähetä Reddittiin"
   twitter: "Twiittaa Twitterissä"
+  # threads: "Post on Threads"
   telegram: "Jaa Telegramissa"
   line: "Jaa LINEssä"
   weibo: "Jaa Weibossä"
+  # x-twitter: "Post on X"
+  # xing: "Share on XING"
 
 shortcode:
   recent_articles: "Viimeaikaiset"

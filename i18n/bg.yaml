@@ -51,9 +51,12 @@ sharing:
   pinterest: "Пин в Pinterest"
   reddit: "Публикуване в Reddit"
   twitter: "Туит в Twitter"
-  telegram: "Споделете в Telegram"
-  line: "Споделете в LINE"
-  weibo: "Споделете в Weibo"
+  telegram: "Споделяне в Telegram"
+  threads: "Публикуване в Threads"
+  line: "Споделяне в LINE"
+  weibo: "Споделяне в Weibo"
+  x-twitter: "Споделяне в X"
+  xing: "Споделяне в XING"
 
 shortcode:
   recent_articles: "Последни"

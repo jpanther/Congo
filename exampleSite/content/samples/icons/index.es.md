@@ -21,6 +21,7 @@ La lista completa de íconos incorporados y sus nombres correspondientes se pued
 | apple                | {{< icon apple >}}                |
 | bars                 | {{< icon bars >}}                 |
 | blogger              | {{< icon blogger >}}              |
+| bluesky              | {{< icon bluesky >}}              |
 | bug                  | {{< icon bug >}}                  |
 | check                | {{< icon check >}}                |
 | chevron-down         | {{< icon chevron-down >}}         |
@@ -85,4 +86,5 @@ La lista completa de íconos incorporados y sus nombres correspondientes se pued
 | whatsapp             | {{< icon whatsapp >}}             |
 | x-twitter            | {{< icon x-twitter >}}            |
 | xmark                | {{< icon xmark >}}                |
+| xing                 | {{< icon xing >}}                 |
 | youtube              | {{< icon youtube >}}              |

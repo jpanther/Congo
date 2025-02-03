@@ -51,9 +51,12 @@ sharing:
   pinterest: "Partilhar no Pinterest"
   reddit: "Partilhar no Reddit"
   twitter: "Partilhar no Twitter"
+  # threads: "Post on Threads"
   telegram: "Partilhar pelo Telegram"
   line: "Partilhar pelo LINE"
   weibo: "Partilhar pelo Weibo"
+  # x-twitter: "Post on X"
+  # xing: "Share on XING"
 
 shortcode:
   recent_articles: "Recente"

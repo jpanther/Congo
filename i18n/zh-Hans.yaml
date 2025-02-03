@@ -50,9 +50,12 @@ sharing:
   pinterest: "钉到 Pinterest"
   reddit: "提交到 Reddit"
   twitter: "分享到 Twitter"
+  # threads: "Post on Threads"
   telegram: "分享到 Telegram"
   line: "分享到 LINE"
   weibo: "分享到 微博"
+  # x-twitter: "Post on X"
+  # xing: "Share on XING"
 
 shortcode:
   recent_articles: "最近的文章"

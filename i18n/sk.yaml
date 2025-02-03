@@ -51,9 +51,12 @@ sharing:
   pinterest: "Pin na Pinterest"
   reddit: "Odoslať na Reddit"
   twitter: "Tweet na Twitteri"
+  # threads: "Post on Threads"
   telegram: "Zdieľaj na Telegram"
   line: "Zdieľaj na LINE"
   weibo: "Zdieľaj na Weibo"
+  # x-twitter: "Post on X"
+  # xing: "Share on XING"
 
 shortcode:
   recent_articles: "Nedávne"

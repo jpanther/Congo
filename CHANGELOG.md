@@ -6,6 +6,90 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [2.10.0] - 2024-12-06
+
+### Changed
+
+- ⚠️ Required Hugo version is now 0.128.0 or later
+- Adopted new `hugo.IsMultilingual` parameter ([#921](https://github.com/jpanther/congo/pull/921))
+- Adopted new `pagination.pagerSize` config parameter ([#945](https://github.com/jpanther/congo/issues/945))
+- Upgrade to Tailwind v3.4.16 ([#934](https://github.com/jpanther/congo/pull/934), [#947](https://github.com/jpanther/congo/pull/947), [#954](https://github.com/jpanther/congo/pull/954), [#973](https://github.com/jpanther/congo/pull/973))
+- Upgrade to Mermaid v11.4.1 ([#931](https://github.com/jpanther/congo/pull/931), [#946](https://github.com/jpanther/congo/pull/946), [#957](https://github.com/jpanther/congo/pull/957), [#971](https://github.com/jpanther/congo/pull/971))
+- Upgrade to ChartJS v4.4.7 ([#953](https://github.com/jpanther/congo/pull/953), [#972](https://github.com/jpanther/congo/pull/972))
+- Updated Traditional Chinese translation ([#949](https://github.com/jpanther/congo/pull/949))
+- Updated Bulgarian translation ([#963](https://github.com/jpanther/congo/pull/963))
+
+### Fixed
+
+- Example site not building due to an issue in the `zh-Hans` translated content ([#944](https://github.com/jpanther/congo/issues/944))
+- Bluesky icon not picking up theme colour ([#955](https://github.com/jpanther/congo/issues/955))
+
+## [2.9.0] - 2024-08-29
+
+### Added
+
+- New `profile` shortcode
+- Umami Analytics support ([#832](https://github.com/jpanther/congo/pull/832))
+- Theme parameter to set a default HTML theme colour ([#849](https://github.com/jpanther/congo/pull/849))
+- New icon for `bluesky` ([#851](https://github.com/jpanther/congo/pull/851))
+- Support for article sharing to Threads ([#869](https://github.com/jpanther/congo/issues/869))
+- Norwegian Bokmål translation ([#872](https://github.com/jpanther/congo/pull/872))
+- Breadcrumb metadata to page schema ([#885](https://github.com/jpanther/congo/pull/885))
+
+### Changed
+
+- ⚠️ Simplified Chinese language code has changed from `zh-cn` to `zh-Hans`
+- ⚠️ Traditional Chinese language code has changed from `zh-tw` to `zh-Hant`
+- Scroll to top links now use JavaScript to determine when to display ([#806](https://github.com/jpanther/congo/pull/806))
+- Upgrade to Tailwind v3.4.10 ([#930](https://github.com/jpanther/congo/pull/930))
+- Upgrade to Typography v0.5.15 ([#864](https://github.com/jpanther/congo/pull/864), [#927](https://github.com/jpanther/congo/pull/927))
+- Upgrade to ChartJS v4.4.4 ([#881](https://github.com/jpanther/congo/pull/881),[#928](https://github.com/jpanther/congo/pull/928))
+- Upgrade to KaTeX v0.16.11 ([#925](https://github.com/jpanther/congo/pull/925))
+- Upgrade to Mermaid v11.0.2 ([#880](https://github.com/jpanther/congo/pull/880), [#926](https://github.com/jpanther/congo/pull/926))
+
+### Fixed
+
+- Featured images overlap page title when article metadata hidden ([#827](https://github.com/jpanther/congo/issues/827))
+- Inconsistent picture rendering between `figure` shortcode and Markdown render hook ([#828](https://github.com/jpanther/congo/issues/828))
+- Animated GIF files are static when `enableImageWebp` is enabled ([#866](https://github.com/jpanther/congo/issues/866))
+- Next article pagination link animation is inverted ([#870](https://github.com/jpanther/congo/issues/870))
+- Unsafe URL warning in README link ([#901](https://github.com/jpanther/congo/pull/901))
+
+## [2.8.2] - 2024-04-17
+
+### Added
+
+- Tamil translation ([#830](https://github.com/jpanther/congo/pull/830))
+- Vietnamese translation ([#845](https://github.com/jpanther/congo/pull/845))
+- Swedish translation ([#852](https://github.com/jpanther/congo/pull/852))
+
+### Changed
+
+- Upgrade to KaTeX v0.16.10 ([#839](https://github.com/jpanther/congo/pull/839))
+- Upgrade to Typography v0.5.12 ([#841](https://github.com/jpanther/congo/pull/841), [#860](https://github.com/jpanther/congo/pull/860))
+- Upgrade to Tailwind v3.4.3 ([#843](https://github.com/jpanther/congo/pull/843))
+
+### Fixed
+
+- Background color inconsistent on mobile when dark mode enabled ([#796](https://github.com/jpanther/congo/issues/796))
+
+## [2.8.1] - 2024-03-09
+
+### Changed
+
+- Upgrade to ChartJS v4.4.2 ([#817](https://github.com/jpanther/congo/pull/817))
+- Upgrade to Mermaid v10.9.0 ([#825](https://github.com/jpanther/congo/pull/825))
+
+### Fixed
+
+- Table of Contents missing left border detail ([#794](https://github.com/jpanther/congo/issues/794))
+- `x-twitter` option missing when using sharing links ([#809](https://github.com/jpanther/congo/issues/809))
+- Chinese default config contains incorrect `author` block name ([#807](https://github.com/jpanther/congo/pull/807))
+- Links in articles are prefixed with a blank space ([#813](https://github.com/jpanther/congo/pull/813))
+- HTML tables would not fill the container width on desktop ([#826](https://github.com/jpanther/congo/issues/826))
+
+## [2.8.0] - 2024-01-22
+
 ### Added
 
 - Quicklink support ([#646](https://github.com/jpanther/congo/pull/646))
@@ -16,6 +100,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Weibo sharing links ([#756](https://github.com/jpanther/congo/pull/756))
 - Support for Tailwind '950' colour variants ([#751](https://github.com/jpanther/congo/pull/751))
 - Table of contents will now scroll if taller than the browser height ([#733](https://github.com/jpanther/congo/pull/733))
+- External URL article stubs now auto-redirect if leaf pages are generated ([#778](https://github.com/jpanther/congo/pull/778))
 - Korean translation ([#731](https://github.com/jpanther/congo/pull/731))
 - Chinese translation of Example site and Docs ([#776](https://github.com/jpanther/congo/pull/776))
 
@@ -34,6 +119,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Hamburger menu is not dismissed when links are clicked ([#705](https://github.com/jpanther/congo/pull/705))
 - KaTeX, table and code elements wider than the page are not formatted correctly ([#753](https://github.com/jpanther/congo/pull/753))
 - 'ß' character is output at the top of articles ([#764](https://github.com/jpanther/congo/pull/764))
+- Article metadata element is output when there is no metadata to display ([#786](https://github.com/jpanther/congo/pull/786))
 - Header elements not vertically centered when using locale switcher ([#788](https://github.com/jpanther/congo/pull/788))
 
 ### Removed
@@ -837,7 +923,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Advanced customisation using simple Tailwind colour definitions and styles
 - Fully documented
 
-[Unreleased]: https://github.com/jpanther/congo/compare/v2.7.6...HEAD
+[Unreleased]: https://github.com/jpanther/congo/compare/v2.10.0...HEAD
+[2.10.0]: https://github.com/jpanther/congo/compare/v2.9.0...v2.10.0
+[2.9.0]: https://github.com/jpanther/congo/compare/v2.8.2...v2.9.0
+[2.8.2]: https://github.com/jpanther/congo/compare/v2.8.1...v2.8.2
+[2.8.1]: https://github.com/jpanther/congo/compare/v2.8.0...v2.8.1
+[2.8.0]: https://github.com/jpanther/congo/compare/v2.7.6...v2.8.0
 [2.7.6]: https://github.com/jpanther/congo/compare/v2.7.5...v2.7.6
 [2.7.5]: https://github.com/jpanther/congo/compare/v2.7.4...v2.7.5
 [2.7.4]: https://github.com/jpanther/congo/compare/v2.7.3...v2.7.4

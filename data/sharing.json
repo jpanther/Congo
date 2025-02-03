@@ -34,6 +34,16 @@
     "title": "sharing.twitter",
     "url": "https://twitter.com/intent/tweet/?url=%s&text=%s"
   },
+  "x-twitter": {
+    "icon": "x-twitter",
+    "title": "sharing.x-twitter",
+    "url": "https://x.com/intent/tweet/?url=%s&text=%s"
+  },
+  "threads": {
+    "icon": "threads",
+    "title": "sharing.threads",
+    "url": "https://www.threads.net/intent/post?text=%s %s"
+  },
   "telegram": {
     "icon": "telegram",
     "title": "sharing.telegram",
@@ -48,5 +58,10 @@
     "icon": "weibo",
     "title": "sharing.weibo",
     "url": "https://service.weibo.com/share/share.php?url=%s&appkey=&title=%s&pic=&ralateUid=&lang"
+  },
+  "xing": {
+    "icon": "xing",
+    "title": "sharing.xing",
+    "url": "https://www.xing.com/spi/shares/new?url=%s"
   }
 }

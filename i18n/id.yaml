@@ -51,9 +51,12 @@ sharing:
   pinterest: "Pin di Pinterest"
   reddit: "Kirim ke Reddit"
   twitter: "Tweet di Twitter"
+  # threads: "Post on Threads"
   telegram: "Bagikan ke Telegram"
   line: "Bagikan ke LINE"
   weibo: "Bagikan ke Weibo"
+  # x-twitter: "Post on X"
+  # xing: "Share on XING"
 
 shortcode:
   recent_articles: "Terbaru"
